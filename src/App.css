@@ -1,32 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  background: url('DRZpic\(mobile\).jpg') no-repeat 50%;
+  background-size: cover;
   color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+header .name {
+  position: absolute;
+  top: 16%;
+  margin-left: 20%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header h1 {
+  text-shadow: -2px 2px 5px #000;
+}
+
+header p {
+  font-size: 21px;
+  font-weight: 300;
+  text-shadow: -1px 1px 5px #000;
+}
+.hidden {
+  visibility: hidden 
+}
+.description {
+  background: url('NYC-path.jpg') no-repeat 50%;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+
+}
+.description p {
+  position: relative;
+  top: 15%;
+  margin-left: 14%;
+  margin-right: 10%;
+  font-size: 21px;
+  font-weight: 300;
+  text-shadow: 2px 3px 5px #000;
+}
+.imgskill {
+  margin: 1% 1% 1% 1%;
+}
+.skills {
+  background: url('skills.jpg') no-repeat 50%;
+  background-size: cover;
+  color: white;
+  height: 97vh;
+}
+.skill {
+  position: relative;
+  top: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 2px 3px 5px #000;
+}
+.navbar-brand:hover {
+  cursor: pointer;
+}
+.portfolio {
+  background-color: rgb(224, 224, 224);
+  background-size: cover;
+  height: 250vh;
+}
+.pages {
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contact {
+  background-color: rgb(224, 224, 224);
+  background-size: cover;
+  height: 97vh;
+}
+.contactinfo {
+  position: relative;
+  top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header {
+    background: url('DRZpic.jpg') no-repeat 50%;
+    background-size: cover;
+    color: white;
+    height: 100vh
   }
-  to {
-    transform: rotate(360deg);
+  header .name {
+    position: absolute;
+    top: 43%;
+    margin-left: 20%
+  }
+  .description p {
+    position: relative;
+    top: 20%;
+    margin-left: 20%;
+    margin-right: 30%;
+    font-size: 21px;
+    font-weight: 300;
+    text-shadow: 2px 3px 5px #000;
   }
 }

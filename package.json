@@ -1,11 +1,17 @@
 {
   "name": "davidrzuluaga-page",
+  "homepage": "https://yourUserName.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deploy": "gh-pages -b master -d build",
+    "gh-pages": "^2.0.1",
+    "predeploy": "yarn run build",
     "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
