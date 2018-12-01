@@ -1,55 +1,29 @@
 import React, { Component } from 'react';
 import {Nav, Navbar, NavItem } from 'react-bootstrap'
 import '../App.css';
-import store from "../store";
 
 class NavbarComp extends Component {
-    showHome = () => {
-        store.dispatch( {
-            type: "showHome"
-        })
-      }
-      showDescription = () => {
-        store.dispatch( {
-            type: "showDescription"
-        })
-      }
-      showSkills = () => {
-        store.dispatch( {
-            type: "showSkills"
-        })
-      }
-      showPortfolio = () => {
-        store.dispatch( {
-            type: "showPortfolio"
-        })
-      }
-      showContact = () => {
-        store.dispatch( {
-            type: "showContact"
-        })
-      }
     render() {
       return (
           <Navbar inverse collapseOnSelect className="navbar-fixed-top">
             <Navbar.Header>
-              <Navbar.Brand onClick={this.showHome}>
-                David R Zuluaga
+              <Navbar.Brand>
+                <a href="#home"> David R Zuluaga</a>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav>
-                <NavItem eventKey={1} onClick={this.showDescription}>
+                <NavItem eventKey={1} href="#description">
                     About Me
                 </NavItem>
-                <NavItem eventKey={2} onClick={this.showSkills}>
+                <NavItem eventKey={2} href="#skills">
                     Skills
                 </NavItem>
-                <NavItem eventKey={3} onClick={this.showPortfolio}>
+                <NavItem eventKey={3} href="#portfolio">
                     Portfolio
                 </NavItem>
-                <NavItem eventKey={2} onClick={this.showContact}>
+                <NavItem eventKey={2} href="#contact">
                   Contact
                 </NavItem>
               </Nav>

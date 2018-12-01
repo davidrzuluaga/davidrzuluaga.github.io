@@ -13,7 +13,6 @@ class Portfolio extends Component {
                 {name: "Flow Overstack", img: "./portfolioimg/Flow_Overstack.png", description: "", url: "https://floating-falls-81636.herokuapp.com/", github: "https://github.com/davidrzuluaga/copy_flowoverstack", technologies: "Ruby on Rails, Bootstrap"},
                 {name: "Expensify", img: "./portfolioimg/Expensify.png", description: "", url: "https://expensify-drz.herokuapp.com/", github: "https://github.com/davidrzuluaga/expensify/", technologies: "Ruby on Rails, Bootstrap, JQuery, Javascript"},
                 {name: "Blog", img: "./portfolioimg/blog.png", description: "", url: "https://lit-reef-96585.herokuapp.com/", github: "https://github.com/davidrzuluaga/blog", technologies: "Ruby on Rails, Bootstrap"},
-
             ]
         }
     }
@@ -31,7 +30,7 @@ class Portfolio extends Component {
                             <Col sm={10} >
                                 <a href={port.url} rel="noopener noreferrer" target="_blank"><strong>{port.name}</strong></a>
                                 <p><strong>Technologies:</strong> {port.technologies}</p>
-                                <p ><a rel="noopener noreferrer" href={port.github} target="_blank">Github link</a></p>
+                                <p><a rel="noopener noreferrer" href={port.github} target="_blank">Github link</a></p>
                             </Col>
                         </Row>
                     </Alert>

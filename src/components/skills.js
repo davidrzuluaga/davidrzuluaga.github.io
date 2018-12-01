@@ -7,7 +7,7 @@ class Skills extends Component {
         super()
         this.state = {
             skills: [
-                {imgurl: "./skillsimgs/Ruby_On_Rails_Logo.png", alt:"Ruby on Rails", height:"60", width:"120"},
+                {imgurl: "./skillsimgs/Ruby_On_Rails_Logo.png", alt:"Ruby on Rails", height:"60", width:"140"},
                 {imgurl: "./skillsimgs/JavaScript-logo.png", alt:"JavaScript", height:"60", width:"60"},
                 {imgurl: "./skillsimgs/CSS3_and_HTML5_logos_and_wordmarks.svg.png", alt:"CSS3", height:"80", width:"140"},
                 {imgurl: "./skillsimgs/React.svg", alt:"React", height:"60", width:"60"},

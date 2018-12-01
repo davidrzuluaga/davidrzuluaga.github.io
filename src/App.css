@@ -2,15 +2,19 @@ header {
   background: url('DRZpic\(mobile\).jpg') no-repeat 50%;
   background-size: cover;
   color: white;
-  height: 100vh;
+  height: 97vh;
 }
 
 header .name {
-  position: absolute;
+  position: relative;
   top: 16%;
-  margin-left: 20%
+  margin-left: 10%
 }
-
+header #contact {
+  position: fixed;
+  bottom: 10%;
+  right: 20%; 
+}
 header h1 {
   text-shadow: -2px 2px 5px #000;
 }
@@ -20,23 +24,25 @@ header p {
   font-weight: 300;
   text-shadow: -1px 1px 5px #000;
 }
+.link-button:hover,
+.link-button:focus {
+text-decoration: none;
+}
 .hidden {
   visibility: hidden 
 }
 .description {
   background: url('NYC-path.jpg') no-repeat 50%;
   background-size: cover;
-  color: white;
-  height: 100vh;
-
+  height: 97vh;
 }
 .description p {
+  color: white;
   position: relative;
   top: 15%;
   margin-left: 14%;
   margin-right: 10%;
   font-size: 21px;
-  font-weight: 300;
   text-shadow: 2px 3px 5px #000;
 }
 .imgskill {
@@ -45,16 +51,14 @@ header p {
 .skills {
   background: url('skills.jpg') no-repeat 50%;
   background-size: cover;
-  color: white;
-  height: 97vh;
+  height: 100vh;
 }
 .skill {
-  position: relative;
-  top: 25%;
+  padding-top: 5%;
+  color: white;
   margin-left: 10%;
   margin-right: 10%;
   font-size: 18px;
-  font-weight: 300;
   text-shadow: 2px 3px 5px #000;
 }
 .navbar-brand:hover {
@@ -63,21 +67,28 @@ header p {
 .portfolio {
   background-color: rgb(224, 224, 224);
   background-size: cover;
-  height: 250vh;
+  height: auto;
 }
 .pages {
+  padding-top: 2%;
+  padding-bottom: 2%;
   color: rgb(0, 0, 0);
   position: relative;
-  top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   font-size: 18px;
-  font-weight: 300;
 }
 .contact {
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(163, 163, 163);
   background-size: cover;
   height: 97vh;
+}
+.contact h1 {
+  margin: 0px
+}
+.alert:last-child {
+  margin: 0px
+
 }
 .contactinfo {
   position: relative;
@@ -95,9 +106,12 @@ header p {
     height: 100vh
   }
   header .name {
-    position: absolute;
+    position: relative;
     top: 43%;
     margin-left: 20%
+  }
+  header #contact {
+    visibility: hidden   
   }
   .description p {
     position: relative;
