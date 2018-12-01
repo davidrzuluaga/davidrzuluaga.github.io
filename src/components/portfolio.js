@@ -26,12 +26,12 @@ class Portfolio extends Component {
                     <Alert bsStyle="warning">
                         <Row>
                             <Col xsHidden sm={2} >
-                                <a href={port.url} target="_blank"><img className="imgskill" src={require(`${port.img}`)} alt=" " height="120" width="120" /></a>
+                                <a href={port.url} rel="noopener noreferrer" target="_blank"><img className="imgskill" src={require(`${port.img}`)} alt=" " height="120" width="120" /></a>
                             </Col>
                             <Col sm={10} >
-                                <a href={port.url} target="_blank"><strong>{port.name}</strong></a>
+                                <a href={port.url} rel="noopener noreferrer" target="_blank"><strong>{port.name}</strong></a>
                                 <p><strong>Technologies:</strong> {port.technologies}</p>
-                                <p ><a href={port.github} target="_blank">Github link</a></p>
+                                <p ><a rel="noopener noreferrer" href={port.github} target="_blank">Github link</a></p>
                             </Col>
                         </Row>
                     </Alert>
