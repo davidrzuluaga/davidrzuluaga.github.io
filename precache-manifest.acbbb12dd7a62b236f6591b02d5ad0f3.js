@@ -4,20 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/guessnumber.fe050785.png"
   },
   {
-    "revision": "ef888b8806547e7e3a2a",
-    "url": "/static/css/main.b8646874.chunk.css"
+    "revision": "3d1ab91b734b61e1df9b",
+    "url": "/static/css/main.144562e1.chunk.css"
   },
   {
-    "revision": "614da4bcb198e3fe417b",
-    "url": "/static/js/1.614da4bc.chunk.js"
+    "revision": "5606b204cbd662a55f95",
+    "url": "/static/js/1.5606b204.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
-  },
-  {
-    "revision": "6121ab6d8452766a51e6eceb5026c543",
-    "url": "/static/media/skills.6121ab6d.jpg"
   },
   {
     "revision": "131d47776443f34c92706760652cfd2f",
@@ -26,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "706a16b2f1ab533768d340dfb35cc3d7",
     "url": "/static/media/DRZpic(mobile).706a16b2.jpg"
+  },
+  {
+    "revision": "6121ab6d8452766a51e6eceb5026c543",
+    "url": "/static/media/skills.6121ab6d.jpg"
   },
   {
     "revision": "76b68ef4d4c10b6900ee818ba54a7263",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/blog.524b1e79.png"
   },
   {
-    "revision": "ef888b8806547e7e3a2a",
-    "url": "/static/js/main.ef888b88.chunk.js"
+    "revision": "3d1ab91b734b61e1df9b",
+    "url": "/static/js/main.3d1ab91b.chunk.js"
   },
   {
     "revision": "2b8da3067ac7ef7c85636b81056c48bc",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/static/media/jQuery.4c5516d0.png"
   },
   {
-    "revision": "9467ef6b7bc5c59cd832003cf1ec348a",
+    "revision": "7647293bb924afe1dfe7dc73717a343d",
     "url": "/index.html"
   }
 ];
