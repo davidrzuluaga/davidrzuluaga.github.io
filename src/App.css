@@ -10,7 +10,7 @@ header .name {
   top: 16%;
   margin-left: 10%
 }
-.skills #contact {
+.skills #cvlink {
   margin-left: 60%;
 }
 header h1 {
@@ -80,18 +80,29 @@ text-decoration: none;
 .contact {
   background-color: rgb(163, 163, 163);
   background-size: cover;
-  height: 97vh;
-}
-.contact h1 {
-  margin: 0px
+  height: auto;
+  padding-bottom: 2%;
 }
 .contactinfo {
-  position: relative;
-  top: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   margin-left: 10%;
   margin-right: 10%;
   font-size: 18px;
   font-weight: 300;
+}
+.social {
+  background-color: rgb(83, 83, 83);
+  padding-top: 1%;
+  padding-bottom: 2%;
+	text-align: center;
+}
+.social a  {
+  color: white;
+}
+.social a:hover  {
+  text-decoration: none;
+  color: rgb(126, 126, 126);
 }
 @media (min-width: 768px) {
   header {
@@ -105,7 +116,7 @@ text-decoration: none;
     top: 43%;
     margin-left: 20%
   }
-  .skills #contact {
+  .skills #cvlink {
     margin-left: 80%;
   }
   .description p {

@@ -23,11 +23,11 @@ class NavbarComp extends Component {
                 <NavItem eventKey={3} href="#portfolio">
                     Portfolio
                 </NavItem>
-                <NavItem eventKey={2} href="#contact">
+                <NavItem eventKey={4} href="#contact">
                   Contact
                 </NavItem>
               </Nav>
-              <Nav pullRight>
+              <Nav pullRight className="hidden-xs">
                 <NavItem eventKey={4} href="https://linkedin.com/in/davidrzuluaga/" target="_blank">
                     <i class="fa fa-linkedin" />
                 </NavItem>

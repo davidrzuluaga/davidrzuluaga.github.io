@@ -31,7 +31,7 @@ class Skills extends Component {
                 <h1>Professional</h1>
                 <h3> Management, Leadership, Service, Project Management, Sales, Mentoring</h3>
             </div>
-            <Button id="contact" href="https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/CV+David+R+Zuluaga.pdf" rel="noopener noreferrer" target="_blank" bsStyle="warning">Download my CV!</Button>
+            <Button id="cvlink" href="https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/CV+David+R+Zuluaga.pdf" rel="noopener noreferrer" target="_blank" bsStyle="warning">Download my CV!</Button>
         </div>
         )
     }
