@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import { Col } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import '../App.css';
 
 class Skills extends Component {
@@ -26,7 +26,12 @@ class Skills extends Component {
                 {this.state.skills.map((skill, index) =>  
                     <img className="imgskill" src={require(`${skill.imgurl}`)} alt={skill.alt} height={skill.height} width={skill.width} />
                 )}
+                <h1>Lenguages</h1>
+                <h3><img className="imgskill" src={require("./skillsimgs/ColFlag.png")} alt={"ColFlag"} height={60} width={60} /> C1 - <img className="imgskill" src={require("./skillsimgs/USFlag.png")} alt={"USFlag"} height={60} width={60} /> B2</h3>
+                <h1>Professional</h1>
+                <h3> Management, Leadership, Service, Project Management, Sales, Mentoring</h3>
             </div>
+            <Button id="contact" href="https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/CV+David+R+Zuluaga.pdf" rel="noopener noreferrer" target="_blank" bsStyle="warning">Download my CV!</Button>
         </div>
         )
     }

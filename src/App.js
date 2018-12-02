@@ -6,7 +6,6 @@ import Skills from './components/skills'
 import Portfolio from './components/portfolio'
 import Contact from './components/contact'
 import './App.css';
-//import { Button } from 'react-bootstrap'
 
 class App extends Component {
   render() {
@@ -19,7 +18,6 @@ class App extends Component {
                 <h1>Hi! I'm David R Zuluaga</h1>
                 <p>Full Stack Developer</p>
             </div>
-            {/*<Button id="contact" href="#contact" bsStyle="warning">Contact Me</Button>*/}
           </header>
         </a>
         <a className="link-button" name="description"><Description /></a>
