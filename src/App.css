@@ -68,6 +68,11 @@ text-decoration: none;
   background-size: cover;
   height: auto;
 }
+.imgportfolio {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
 .pages {
   padding-top: 2%;
   padding-bottom: 2%;
