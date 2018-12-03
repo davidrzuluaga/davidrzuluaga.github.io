@@ -1,5 +1,5 @@
 header {
-  background: url('DRZpic\(mobile\).jpg') no-repeat 50%;
+  background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/DRZpic\(mobile\).jpg') no-repeat 50%;
   background-size: cover;
   color: white;
   height: 97vh;
@@ -30,7 +30,7 @@ text-decoration: none;
   visibility: hidden 
 }
 .description {
-  background: url('NYC-path.jpg') no-repeat 50%;
+  background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/NYC-path.jpg') no-repeat 50%;
   background-size: cover;
   height: 97vh;
 }
@@ -47,7 +47,7 @@ text-decoration: none;
   margin: 1% 1% 1% 1%;
 }
 .skills {
-  background: url('skills.jpg') no-repeat 50%;
+  background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/skills.jpg') no-repeat 50%;
   background-size: cover;
   height: auto;
   padding-bottom: 2%;
@@ -106,7 +106,7 @@ text-decoration: none;
 }
 @media (min-width: 768px) {
   header {
-    background: url('DRZpic.jpg') no-repeat 50%;
+    background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/DRZpic.jpg') no-repeat 50%;
     background-size: cover;
     color: white;
     height: 100vh
