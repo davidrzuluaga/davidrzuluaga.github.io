@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import { Row, Col, Alert } from 'react-bootstrap'
 import '../App.css';
-import pageInfo from '../pageinfo';
+import store from "../store";
 
 class Portfolio extends Component {
     constructor() {
         super()
         this.state = {
-            portfolio: pageInfo.portfolio
+            pageInfo: {portfolio: [""]}
         }
+        store.subscribe(() => {
+            this.setState({
+              pageInfo: store.getState().pageInfo
+            })
+        })
     }
     render() {
       return (
@@ -16,8 +21,8 @@ class Portfolio extends Component {
             <div className="pages">
                 <h1>Portfolio</h1>
                 <Row>
-                    {this.state.portfolio.map((port, index) =>  
-                        <Col sm={6}>
+                    {this.state.pageInfo.portfolio.map((port, index) =>  
+                        <Col key={port.name} sm={6}>
                             <Alert bsStyle="warning">
                                 <Row>
                                     <Col xsHidden sm={4} >

@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 //import { Col } from 'react-bootstrap'
+import store from "../store";
 import '../App.css';
-import pageInfo from '../pageinfo';
 
 class Description extends Component {
     constructor() {
         super()
         this.state = {
-            description: pageInfo.description
+            pageInfo: {description: [""]}
         }
+        store.subscribe(() => {
+          this.setState({
+            pageInfo: store.getState().pageInfo
+          })
+        })
     }
     render() {
       return (
-          <div class="description">
-            {this.state.description.map((desc, index) =>  
-                <p>{desc}</p>
+          <div className="description">
+            {this.state.pageInfo.description.map((desc, index) =>  
+                <p key={desc}>{desc}</p>
             )}
         </div>
         )

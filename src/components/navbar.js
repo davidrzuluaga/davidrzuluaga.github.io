@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
 import {Nav, Navbar, NavItem } from 'react-bootstrap'
 import '../App.css';
+import store from "../store";
 
 class NavbarComp extends Component {
+    constructor() {
+        super()
+        this.state = {
+            pageInfo: {social: [""]}
+        }
+        store.subscribe(() => {
+          this.setState({
+            pageInfo: store.getState().pageInfo
+          })
+        })
+    }
     render() {
       return (
           <Navbar inverse collapseOnSelect className="navbar-fixed-top">
@@ -28,18 +40,11 @@ class NavbarComp extends Component {
                 </NavItem>
               </Nav>
               <Nav pullRight className="hidden-xs">
-                <NavItem eventKey={4} href="https://linkedin.com/in/davidrzuluaga/" target="_blank">
-                    <i class="fa fa-linkedin" />
-                </NavItem>
-                <NavItem eventKey={2} href="https://www.github.com/davidrzuluaga" target="_blank">
-                    <i class="fa fa-github" />
-                </NavItem>
-                <NavItem eventKey={1} href="https://www.facebook.com/davidricardozuluaga" target="_blank">
-                    <i class="fa fa-facebook"/>
-                </NavItem>
-                <NavItem eventKey={3} href="https://www.twitter.com/davidrzuluaga" target="_blank">
-                    <i class="fa fa-twitter" />
-                </NavItem>
+                {this.state.pageInfo.social.map((social, index) =>  
+                    <NavItem href={`${social.link}`} eventKey={index} target="_blank">
+                        <i className={social.icon} />
+                    </NavItem>
+                )}
               </Nav>
             </Navbar.Collapse>
           </Navbar>

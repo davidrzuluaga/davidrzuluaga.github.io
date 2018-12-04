@@ -1,23 +1,34 @@
 import React, { Component } from 'react';
 //import { Col } from 'react-bootstrap'
 import '../App.css';
+import store from "../store";
 
 class Contact extends Component {
+    constructor() {
+        super()
+        this.state = {
+            pageInfo: {social: [""]}
+        }
+        store.subscribe(() => {
+          this.setState({
+            pageInfo: store.getState().pageInfo
+          })
+        })
+    }
     render() {
       return (
         <div>
             <div className="contact">
                 <div className="contactinfo">
                     <h1>Find me here!</h1>
-                    <h3><i class="fa fa-envelope" /> david@DavidRZuluaga.com</h3> 
+                    <h3><i className="fa fa-envelope" /> {this.state.pageInfo.email}</h3> 
                 </div>
             </div>
             <div className="social">
                 <h3>
-                    <a rel="noopener noreferrer" href="https://linkedin.com/in/davidrzuluaga/" target="_blank"><i class="fa fa-linkedin" /> davidrzuluaga - </a>
-                    <a rel="noopener noreferrer" href="https://www.github.com/davidrzuluaga" target="_blank"><i class="fa fa-github" /> davidrzuluaga - </a>
-                    <a rel="noopener noreferrer" href="https://www.facebook.com/davidricardozuluaga" target="_blank"><i class="fa fa-facebook"/> davidricardozuluaga - </a>
-                    <a rel="noopener noreferrer" href="https://www.twitter.com/davidrzuluaga" target="_blank"><i class="fa fa-twitter" /> davidrzuluaga</a>
+                    {this.state.pageInfo.social.map((social, index) =>  
+                        <a rel="noopener noreferrer" key={social.icon} href={social.link} target="_blank"><i class={social.icon} /> {social.user} - </a>
+                    )}
                 </h3> 
             </div>
         </div>
