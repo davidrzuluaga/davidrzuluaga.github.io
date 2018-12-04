@@ -32,16 +32,23 @@ text-decoration: none;
 .description {
   background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/NYC-path.jpg') no-repeat 50%;
   background-size: cover;
-  height: 97vh;
+  height: auto;
 }
 .description p {
   color: white;
   position: relative;
-  top: 15%;
   margin-left: 14%;
   margin-right: 10%;
   font-size: 21px;
   text-shadow: 2px 3px 5px #000;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.description p:first-child {
+  padding-top: 15%;
+}
+.description p:last-child {
+  padding-bottom: 15%;
 }
 .imgskill {
   margin: 1% 1% 1% 1%;

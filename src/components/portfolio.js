@@ -26,7 +26,7 @@ class Portfolio extends Component {
                             <Alert bsStyle="warning">
                                 <Row>
                                     <Col xsHidden sm={4} >
-                                        <a href={port.url} rel="noopener noreferrer" target="_blank"><img className="imgportfolio" src={port.img} alt={port.name} height="120" width="120" /></a>
+                                        <a href={port.url} rel="noopener noreferrer" target="_blank"><img className="imgportfolio" key={port.name} src={port.img} alt={port.name} height="120" width="120" /></a>
                                     </Col>
                                     <Col sm={8} >
                                         <a href={port.url} rel="noopener noreferrer" target="_blank"><strong>{port.name}</strong></a>
