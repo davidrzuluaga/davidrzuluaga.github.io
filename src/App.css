@@ -92,6 +92,31 @@ text-decoration: none;
   margin-right: 10%;
   font-size: 18px;
 }
+.experience {
+  background: url('https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/backgrounds/Summit.JPG') no-repeat 50%;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 2%;
+}
+.xp {
+  padding-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}
+.xp .alert-success {
+  background-color: rgba(138, 138, 138, 0.651);
+  border-color: rgb(61, 61, 61);
+  color: white;
+  text-shadow: 1px -3px 3px rgba(0, 0, 0, 0.514);
+
+}
+.xp h1 {
+  color: white;
+  text-shadow: 3px -3px 3px rgba(0, 0, 0, 0.671);
+}
 .contact {
   background-color: rgb(163, 163, 163);
   background-size: cover;

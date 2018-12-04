@@ -5,6 +5,7 @@ import Description from './components/description'
 import Skills from './components/skills'
 import Portfolio from './components/portfolio'
 import Contact from './components/contact'
+import Experience from './components/experience'
 import './App.css';
 import axios from 'axios';
 import store from "./store";
@@ -44,6 +45,7 @@ class App extends Component {
       <a className="link-button" name="description"><Description /></a>
       <a className="link-button" name="skills"><Skills /></a>
       <a className="link-button" name="portfolio"><Portfolio /></a>
+      <a className="link-button" name="experience"><Experience /></a>
       <a className="link-button" name="contact"><Contact /></a>
       </div>
     );

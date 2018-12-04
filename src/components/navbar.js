@@ -35,7 +35,10 @@ class NavbarComp extends Component {
                 <NavItem eventKey={3} href="#portfolio">
                     Portfolio
                 </NavItem>
-                <NavItem eventKey={4} href="#contact">
+                <NavItem eventKey={4} href="#experience">
+                    Experience
+                </NavItem>
+                <NavItem eventKey={5} href="#contact">
                   Contact
                 </NavItem>
               </Nav>
