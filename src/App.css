@@ -60,6 +60,9 @@ text-decoration: none;
   font-size: 18px;
   text-shadow: 2px 3px 5px #000;
 }
+.langSkills {
+  display: inline-block;
+}
 .navbar-brand:hover {
   cursor: pointer;
 }

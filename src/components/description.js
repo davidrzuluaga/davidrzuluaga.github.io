@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 //import { Col } from 'react-bootstrap'
 import '../App.css';
+import pageInfo from '../pageinfo';
 
 class Description extends Component {
+    constructor() {
+        super()
+        this.state = {
+            description: pageInfo.description
+        }
+    }
     render() {
       return (
           <div class="description">
-            <p>Hello! I am a Ruby on Rails Full Stack developer and International Business Negotiator, i am from Medellin, Colombia.</p>
-            <p>I love computers and code, since i was a kid when i learned how to write code, i realized how important is it to understand the language of computers to create something even bigger, in order of cover the world's needs.</p>
+            {this.state.description.map((desc, index) =>  
+                <p>{desc}</p>
+            )}
         </div>
         )
     }
