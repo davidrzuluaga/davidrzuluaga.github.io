@@ -106,16 +106,27 @@ text-decoration: none;
   font-size: 18px;
   text-align: left;
 }
-.xp .alert-success {
-  background-color: rgba(138, 138, 138, 0.651);
+.xp .xpcard {
+  background-color: rgba(0, 94, 170, 0.726);
   border-color: rgb(61, 61, 61);
   color: white;
-  text-shadow: 1px -3px 3px rgba(0, 0, 0, 0.514);
-
 }
 .xp h1 {
+  color: rgb(71, 71, 71);
+  text-shadow: 3px -3px 3px rgba(255, 255, 255, 0.671);
+  text-align: center;
+}
+.xp a:hover  {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+.xp a {
   color: white;
-  text-shadow: 3px -3px 3px rgba(0, 0, 0, 0.671);
+}
+.xp img {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 .contact {
   background-color: rgb(163, 163, 163);

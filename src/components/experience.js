@@ -7,7 +7,7 @@ class Experience extends Component {
     constructor() {
         super()
         this.state = {
-            pageInfo: {webDevSkills: [""], langSkills: [""], proSkills: [""]}
+            pageInfo: {experience: [""]}
         }
         store.subscribe(() => {
             this.setState({
@@ -21,12 +21,23 @@ class Experience extends Component {
             <div className="xp"> 
                 <h1>Experience</h1>
                 <Row>
-                    <Col sm={10} xsOffset={1}>
-                        <Alert bsStyle="success">
-                            <h2>Make It Real Camp</h2>
-                            <h4>Programming Bootcamp</h4>
-                        </Alert>
-                    </Col>
+                    {this.state.pageInfo.experience.map((xp, index) =>  
+                        <Col sm={6} >
+                            <Alert className={"xpcard"}>
+                                <Row>
+                                    <Col sm={2} >
+                                        <img src={xp.logo} alt={xp.institution} height="60" width="60"></img>
+                                    </Col>
+                                    <Col sm={10} >
+                                        <h2><a rel="noopener noreferrer" target="_blank" href={xp.link}>{xp.title}</a></h2>
+                                        <h4>{xp.subtitle}</h4>
+                                        <h4>{xp.institution}</h4>
+                                        <p>{xp.dates}</p>
+                                    </Col>
+                                </Row>
+                            </Alert>
+                        </Col>
+                    )}
                 </Row>
             </div>
         </div>
