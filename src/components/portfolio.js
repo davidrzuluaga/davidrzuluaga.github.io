@@ -19,7 +19,7 @@ class Portfolio extends Component {
       return (
         <div className="portfolio">
             <div className="pages">
-                <h1>Experience</h1>
+                <h1>Portfolio</h1>
                     <Row>
                         {this.state.pageInfo.portfolio.map((port, index) =>  
                             <Col key={port.name} sm={6}>
