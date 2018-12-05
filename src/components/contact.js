@@ -29,6 +29,7 @@ class Contact extends Component {
                     {this.state.pageInfo.social.map((social, index) =>  
                         <a rel="noopener noreferrer" key={social.icon} href={social.link} target="_blank"><i class={social.icon} /> {social.user} - </a>
                     )}
+                    <a href={"mailto:"+this.state.pageInfo.email}><i className="fa fa-envelope" /> </a>
                 </h3> 
             </div>
         </div>
