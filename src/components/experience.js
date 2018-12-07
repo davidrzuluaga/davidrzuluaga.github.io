@@ -25,9 +25,7 @@ class Experience extends Component {
                         <Col sm={6} >
                             <Alert className={"xpcard"}>
                                 <Row>
-                                    <Col sm={2} >
-                                        <img src={xp.logo} alt={xp.institution} height="60" width="60"></img>
-                                    </Col>
+                                        <img src={xp.logo} alt={xp.institution} height="60" width="60"/>
                                     <Col sm={10} >
                                         <h2><a rel="noopener noreferrer" target="_blank" href={xp.link}>{xp.title}</a></h2>
                                         <h4>{xp.subtitle}</h4>

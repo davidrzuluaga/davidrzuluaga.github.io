@@ -21,17 +21,17 @@ class Portfolio extends Component {
             <div className="pages">
                 <h1>Portfolio</h1>
                     <Row>
-                        {this.state.pageInfo.portfolio.map((port, index) =>  
-                            <Col key={port.name} sm={6}>
+                        {this.state.pageInfo.portfolio.map((portfolio, index) =>  
+                            <Col key={portfolio.name} sm={6}>
                                 <Alert bsStyle="warning">
                                     <Row>
                                         <Col xsHidden sm={4} >
-                                            <a href={port.url} rel="noopener noreferrer" target="_blank"><img className="imgportfolio" key={port.name} src={port.img} alt={port.name} height="120" width="120" /></a>
+                                            <img className="imgportfolio" src={portfolio.img} alt={portfolio.name} height="120" width="120" />
                                         </Col>
                                         <Col sm={8} >
-                                            <a href={port.url} rel="noopener noreferrer" target="_blank"><strong>{port.name}</strong></a>
-                                            <p><strong>Technologies:</strong> {port.technologies}</p>
-                                            <p><a rel="noopener noreferrer" href={port.github} target="_blank">Github link</a></p>
+                                            <a href={portfolio.url} rel="noopener noreferrer" target="_blank"><strong>{portfolio.name}</strong></a>
+                                            <p><strong>Technologies:</strong> {portfolio.technologies}</p>
+                                            <p><a rel="noopener noreferrer" href={portfolio.github} target="_blank">Github link</a></p>
                                         </Col>
                                     </Row>
                                 </Alert>
