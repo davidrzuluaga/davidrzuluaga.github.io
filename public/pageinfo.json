@@ -2,6 +2,7 @@
 "greet": "Hi! I'm David R Zuluaga",
 "greetDescription": "Full Stack Developer",
 "portfolio": [
+    {"name": "DavidRZuluaga.com", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/drzpage.png", "description": "", "url": "https://github.com/davidrzuluaga/davidrzuluaga.github.io", "github": "https://github.com/davidrzuluaga/timers-react", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Timers", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/timers.png", "description": "", "url": "https://davidrzuluaga.com/timers-react", "github": "https://github.com/davidrzuluaga/timers-react", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Posts in Order", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/postspopulares.png", "description": "", "url": "https://davidrzuluaga.com/Post-mas-Votados-React", "github": "https://github.com/davidrzuluaga/Post-mas-Votados-React", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Guess the Number", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/guessnumber.png", "description": "", "url": "http://davidrzuluaga.com/picasyfijas", "github": "https://github.com/davidrzuluaga/picasyfijas", "technologies": "JQuery, Javascript"},
