@@ -12,11 +12,11 @@
     {"name": "Posts in Order", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/postspopulares.png", "description": "", "url": "https://davidrzuluaga.com/Post-mas-Votados-React", "github": "https://github.com/davidrzuluaga/Post-mas-Votados-React", "technologies": "React, Redux, Bootstrap, Javascript"}
 ],
 "description": [
-    "Hello! I am a Ruby on Rails Full Stack developer and International Business Negotiator, i am from Medellin, Colombia.", 
-    "I love computers and code, since i was a kid when i learned how to write code, i realized how important is this skill to understand the language of computers to create something even bigger.",
-    "My main interest in learning code, is the possibility of solve all the problems of all environments.",
-    "I'm passionate seeing something that I made to be used and loved by others, and more importantly, that facilitates and improves their lives.",
-    "I believe that everything can improve, that's why I'm always looking to make all things better and better."
+    "I'm full stack web developer with an undergraduate degree in International Business Management. ",
+    "I started to learn to code back when I was child. Ever since then I've been fascinated by the possibilities of code which is why I decided to focus my career on programming.",
+    "I have previous work experience in data mining. This experience helped me improve my knowledge on data bases and information architecture. ",
+    "My academic background and work experience have allowed me to cultivate skills that enable me to constantly find ways to improve on existing products and communicate ideas. ",
+    "I'm passionate seeing something that I made to be used and loved by others, and more importantly, that facilitates and improves their lives."
 ],
 "webDevSkills": [
     {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Ruby_On_Rails_Logo.png", "alt":"Ruby on Rails", "height":"60", "width":"140"},
