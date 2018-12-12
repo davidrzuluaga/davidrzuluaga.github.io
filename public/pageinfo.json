@@ -2,15 +2,21 @@
 "greet": "Hi! I'm David R Zuluaga",
 "greetDescription": "Full Stack Developer",
 "portfolio": [
+    {"name": "DavidRZuluaga.com", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/drzpage.png", "description": "", "url": "#", "github": "https://github.com/davidrzuluaga/davidrzuluaga.github.io", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Timers", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/timers.png", "description": "", "url": "https://davidrzuluaga.com/timers-react", "github": "https://github.com/davidrzuluaga/timers-react", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Posts in Order", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/postspopulares.png", "description": "", "url": "https://davidrzuluaga.com/Post-mas-Votados-React", "github": "https://github.com/davidrzuluaga/Post-mas-Votados-React", "technologies": "React, Redux, Bootstrap, Javascript"},
     {"name": "Guess the Number", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/guessnumber.png", "description": "", "url": "http://davidrzuluaga.com/picasyfijas", "github": "https://github.com/davidrzuluaga/picasyfijas", "technologies": "JQuery, Javascript"},
     {"name": "Flow Overstack", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Flow_Overstack.png", "description": "", "url": "https://floating-falls-81636.herokuapp.com/", "github": "https://github.com/davidrzuluaga/copy_flowoverstack", "technologies": "Ruby on Rails, Bootstrap"},
     {"name": "Expensify", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Expensify.png", "description": "", "url": "https://expensify-drz.herokuapp.com/", "github": "https://github.com/davidrzuluaga/expensify/", "technologies": "Ruby on Rails, Bootstrap, JQuery, Javascript"},
-    {"name": "Blog", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/blog.png", "description": "", "url": "https://lit-reef-96585.herokuapp.com/", "github": "https://github.com/davidrzuluaga/blog", "technologies": "Ruby on Rails, Bootstrap"}
+    {"name": "Blog", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/blog.png", "description": "", "url": "https://lit-reef-96585.herokuapp.com/", "github": "https://github.com/davidrzuluaga/blog", "technologies": "Ruby on Rails, Bootstrap"},
+    {"name": "La Magia del Saber", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/magiascreenshot.png", "description": "", "url": "http://lamagiadelsaber.edu.co/", "github": "https://github.com/davidrzuluaga/lamagiadelsaber.edu.co", "technologies": "Ruby on Rails, Bootstrap, API"}
 ],
 "description": [
-    "Hello! I am a Ruby on Rails Full Stack developer and International Business Negotiator, i am from Medellin, Colombia.", "I love computers and code, since i was a kid when i learned how to write code, i realized how important is it to understand the language of computers to create something even bigger, in order of cover the world's needs."
+    "Hello! I am a Ruby on Rails Full Stack developer and International Business Negotiator, i am from Medellin, Colombia.", 
+    "I love computers and code, since i was a kid when i learned how to write code, i realized how important is this skill to understand the language of computers to create something even bigger.",
+    "My main interest in learning code, is the possibility of solve all the problems of all environments.",
+    "I'm passionate seeing something that I made to be used and loved by others, and more importantly, that facilitates and improves their lives.",
+    "I believe that everything can improve, that's why I'm always looking to make all things better and better."
 ],
 "webDevSkills": [
     {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Ruby_On_Rails_Logo.png", "alt":"Ruby on Rails", "height":"60", "width":"140"},
