@@ -11,4 +11,4 @@ const reducer = (state, action) => {
 
 }
 
-export default createStore(reducer);
+export default createStore(reducer, {pageInfo: {experience: [""], portfolio: [""], social: [""], description: [""], webDevSkills: [""], langSkills: [""], proSkills: [""]}});

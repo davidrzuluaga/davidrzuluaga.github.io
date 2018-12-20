@@ -1,28 +1,21 @@
-import React, { Component } from 'react';
-//import { Col } from 'react-bootstrap'
-import store from "../store";
+import React from 'react';
+import { connect } from 'react-redux';
 import '../App.css';
 
-class Description extends Component {
-    constructor() {
-        super()
-        this.state = {
-            pageInfo: {description: [""]}
-        }
-        store.subscribe(() => {
-          this.setState({
-            pageInfo: store.getState().pageInfo
-          })
-        })
-    }
-    render() {
+const Description = (props) => {
+
       return (
-          <div className="description">
-            {this.state.pageInfo.description.map((desc, index) =>  
+        <div className="description">
+            {props.pageInfo.description.map((desc, index) =>  
                 <p key={desc}>{desc}</p>
             )}
         </div>
         )
     }
+
+const mapStateToProps = state => {
+    return {
+        pageInfo: state.pageInfo
+    }
 }
-export default Description;
+export default connect(mapStateToProps)(Description);

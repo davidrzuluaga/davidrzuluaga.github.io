@@ -1,27 +1,15 @@
-import React, { Component } from 'react';
-import { Button, Row, Col, Alert } from 'react-bootstrap'
-import store from "../store";
+import React from 'react';
+import { connect } from 'react-redux';
+import { Row, Col, Alert } from 'react-bootstrap'
 import '../App.css';
 
-class Experience extends Component {
-    constructor() {
-        super()
-        this.state = {
-            pageInfo: {experience: [""]}
-        }
-        store.subscribe(() => {
-            this.setState({
-              pageInfo: store.getState().pageInfo
-            })
-        })
-    }
-    render() {
+const Experience = (props) => {
       return (
         <div className="experience">
             <div className="xp"> 
                 <h1>Experience</h1>
                 <Row>
-                    {this.state.pageInfo.experience.map((xp, index) =>  
+                    {props.pageInfo.experience.map((xp, index) =>  
                         <Col sm={6} >
                             <Alert className={"xpcard"}>
                                 <Row>
@@ -40,6 +28,17 @@ class Experience extends Component {
             </div>
         </div>
         )
-    }
 }
-export default Experience;
+
+const mapStateToProps = state => {
+    return {
+        pageInfo: state.pageInfo
+    }
+}/*
+const mapDispatchToProps = dispatch => {
+    return {
+
+    }
+}*/
+
+export default connect(mapStateToProps)(Experience);

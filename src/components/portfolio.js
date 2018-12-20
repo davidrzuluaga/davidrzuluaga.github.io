@@ -1,27 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'react-bootstrap'
 import '../App.css';
-import store from "../store";
 
-class Portfolio extends Component {
-    constructor() {
-        super()
-        this.state = {
-            pageInfo: {portfolio: [""]}
-        }
-        store.subscribe(() => {
-            this.setState({
-              pageInfo: store.getState().pageInfo
-            })
-        })
-    }
-    render() {
+const Portfolio = (props) => {
       return (
         <div className="portfolio">
             <div className="pages">
                 <h1>Portfolio</h1>
                     <Row>
-                        {this.state.pageInfo.portfolio.map((portfolio, index) =>  
+                        {props.pageInfo.portfolio.map((portfolio, index) =>  
                             <Col key={portfolio.name} sm={6}>
                                 <Alert bsStyle="warning">
                                     <Row>
@@ -42,6 +30,10 @@ class Portfolio extends Component {
             </div>
         </div>
         )
+}
+const mapStateToProps = state => {
+    return {
+        pageInfo: state.pageInfo
     }
 }
-export default Portfolio;
+export default connect(mapStateToProps)(Portfolio);

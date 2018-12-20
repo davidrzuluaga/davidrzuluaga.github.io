@@ -1,38 +1,30 @@
-import React, { Component } from 'react';
-import { Button } from 'react-bootstrap'
-import store from "../store";
+import React from 'react';
+import { connect } from 'react-redux';
+import { Button} from 'react-bootstrap';
 import '../App.css';
 
-class Skills extends Component {
-    constructor() {
-        super()
-        this.state = {
-            pageInfo: {webDevSkills: [""], langSkills: [""], proSkills: [""]}
-        }
-        store.subscribe(() => {
-            this.setState({
-              pageInfo: store.getState().pageInfo
-            })
-        })
-    }
-    render() {
+const Skills = (props) => {
       return (
         <div className="skills">
             <div className="skill">
                 <h1>Web Developer Skills</h1>
-                {this.state.pageInfo.webDevSkills.map((skill, index) =>  
+                {props.pageInfo.webDevSkills.map((skill, index) =>  
                     <img className="imgskill" src={skill.imgurl} key={skill.alt} alt={skill.alt} height={skill.height} width={skill.width} />
                 )}
                 <h1>Languages</h1>
-                    {this.state.pageInfo.langSkills.map((skill, index) =>  
+                    {props.pageInfo.langSkills.map((skill, index) =>  
                        <div className="langSkills" key={skill.alt}><img className="imgskill" src={skill.imgurl} alt={skill.alt} height={skill.height} width={skill.width} /> {skill.level}</div>
                     )}                   
                 <h1>Professional</h1>
-                <h3>{this.state.pageInfo.proSkills.map((skill, index) => skill + ", " )} among others. </h3>
+                <h3>{props.pageInfo.proSkills.map((skill, index) => skill + ", " )} among others. </h3>
             </div>
-            <Button id="cvlink" href={this.state.pageInfo.CV} rel="noopener noreferrer" target="_blank" bsStyle="warning">Download my CV!</Button>
+            <Button id="cvlink" href={props.pageInfo.CV} rel="noopener noreferrer" target="_blank" bsStyle="warning">Download my CV!</Button>
         </div>
         )
     }
-}
-export default Skills;
+    const mapStateToProps = state => {
+        return {
+            pageInfo: state.pageInfo
+        }
+    }
+export default connect(mapStateToProps)(Skills);
