@@ -1,50 +1,51 @@
 [{
-"greet": "Hi! I'm David R Zuluaga",
-"greetDescription": "Full Stack Developer",
-"portfolio": [
-    {"name": "DavidRZuluaga.com", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/drzpage.png", "description": "", "url": "#", "github": "https://github.com/davidrzuluaga/davidrzuluaga.github.io", "technologies": "React, Redux, Bootstrap, Javascript"},
-    {"name": "Timers", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/timers.png", "description": "", "url": "https://davidrzuluaga.com/timers-react", "github": "https://github.com/davidrzuluaga/timers-react", "technologies": "React, Redux, Bootstrap, Javascript"},
-    {"name": "Guess the Number", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/guessnumber.png", "description": "", "url": "http://davidrzuluaga.com/picasyfijas", "github": "https://github.com/davidrzuluaga/picasyfijas", "technologies": "JQuery, Javascript"},
-    {"name": "Flow Overstack", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Flow_Overstack.png", "description": "", "url": "https://floating-falls-81636.herokuapp.com/", "github": "https://github.com/davidrzuluaga/copy_flowoverstack", "technologies": "Ruby on Rails, Bootstrap"},
-    {"name": "Blog", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/blog.png", "description": "", "url": "https://lit-reef-96585.herokuapp.com/", "github": "https://github.com/davidrzuluaga/blog", "technologies": "Ruby on Rails, Bootstrap"},
-    {"name": "La Magia del Saber", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/magiascreenshot.png", "description": "", "url": "http://lamagiadelsaber.edu.co/", "github": "https://github.com/davidrzuluaga/lamagiadelsaber.edu.co", "technologies": "Ruby on Rails, Bootstrap, API"},
-    {"name": "Expensify", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Expensify.png", "description": "", "url": "https://expensify-drz.herokuapp.com/", "github": "https://github.com/davidrzuluaga/expensify/", "technologies": "Ruby on Rails, Bootstrap, JQuery, Javascript"},
-    {"name": "Posts in Order", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/postspopulares.png", "description": "", "url": "https://davidrzuluaga.com/Post-mas-Votados-React", "github": "https://github.com/davidrzuluaga/Post-mas-Votados-React", "technologies": "React, Redux, Bootstrap, Javascript"}
-],
-"description": [
-    "I'm full stack web developer with an undergraduate degree in International Business Management. ",
-    "I started to learn to code back when I was child. Ever since then I've been fascinated by the possibilities of code which is why I decided to focus my career on programming.",
-    "I have previous work experience in data mining. This experience helped me improve my knowledge on data bases and information architecture. ",
-    "My academic background and work experience have allowed me to cultivate skills that enable me to constantly find ways to improve on existing products and communicate ideas. ",
-    "I'm passionate seeing something that I made to be used and loved by others, and more importantly, that facilitates and improves their lives."
-],
-"webDevSkills": [
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Ruby_On_Rails_Logo.png", "alt":"Ruby on Rails", "height":"60", "width":"140"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/JavaScript-logo.png", "alt":"JavaScript", "height":"60", "width":"60"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/CSS3_and_HTML5_logos_and_wordmarks.svg.png", "alt":"CSS3", "height":"80", "width":"140"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/React.svg", "alt":"React", "height":"60", "width":"60"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Redux.png", "alt":"Redux", "height":"60", "width":"60"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/bootstrap-stack.png", "alt":"bootstrap-stack", "height":"60", "width":"60"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/jQuery.png", "alt":"jQuery", "height":"60", "width":"140"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Git-Logo.png", "alt":"Git-Logo", "height":"60", "width":"140"}
-],
-"langSkills": [
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/ColFlag.png", "alt":"ColFlag", "height":"60", "width":"60", "level": "C2"},
-    {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/USFlag.png", "alt":"USFlag", "height":"60", "width":"60", "level": "B2"}
-],
-"proSkills": ["Management", "Leadership", "Service", "Project Management", "Sales", "Mentoring"],
-"experience": [
-    {"area": "work", "title": "JS Full Stack", "subtitle": "Web Developer", "institution": "hackU", "description": "", "link": "http://hacku.co", "dates": "Jan. 2019 to Aug. 2019", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/36643290_1776053359142983_8512123429707579392_n.png"},
-    {"area": "education", "title": "Full Stack Web Developer", "subtitle": "Programming Bootcamp", "institution": "Make It Real Camp", "description": "", "link": "https://www.makeitreal.camp/u/davidrzuluaga", "dates": "June 2018 to Nov. 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/spaces%252F-LAPclUsEGF8MxYGQwcr%252Favatar.png"},
-    {"area": "education", "title": "International Business Negotiator", "subtitle": "Logistics", "institution": "Universidad de Medellin", "description": "", "link": "http://www.udem.edu.co/index.php/2012-10-12-13-47-21/negocios-internacionales/informacion-general", "dates": "Aug. 2013 to July 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/240px-Escudo_Universidad_de_Medellin.svg.png"},
-    {"area": "work", "title": "Apprentice to the Vice president", "subtitle": "Job functions: Data mining, reports handling, practicing supervisor, statraining, etc", "institution": "Teleperformance", "description": "", "link": "https://www.teleperformance.com/en-us", "dates": "Sept. 2017 to Apr. 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/logo_tp.png"}
-],
-"CV": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/CV+David+R+Zuluaga.pdf",
-"email": "david@DavidRZuluaga.com",
-"social": [
-    {"socialName": "linkedin", "link": "https://linkedin.com/in/davidrzuluaga/", "icon": "fa fa-linkedin", "user": "davidrzuluaga" },
-    {"socialName": "github", "link": "https://www.github.com/davidrzuluaga", "icon": "fa fa-github", "user": "davidrzuluaga" },
-    {"socialName": "facebook", "link": "https://www.facebook.com/davidricardozuluaga", "icon": "fa fa-facebook", "user": "davidricardozuluaga" },
-    {"socialName": "facebook", "link": "https://www.twitter.com/davidrzuluaga", "icon": "fa fa-twitter", "user": "davidrzuluaga" }
-]
-}]
+    "greet": "Hi! I'm David R Zuluaga",
+    "greetDescription": "Full Stack Developer",
+    "portfolio": [
+        {"name": "DavidRZuluaga.com", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/drzpage.png", "description": "", "url": "#", "github": "https://github.com/davidrzuluaga/davidrzuluaga.github.io", "technologies": "React, Redux, Bootstrap, Javascript"},
+        {"name": "Timers", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/timers.png", "description": "", "url": "https://davidrzuluaga.com/timers-react", "github": "https://github.com/davidrzuluaga/timers-react", "technologies": "React, Redux, Bootstrap, Javascript"},
+        {"name": "Guess the Number", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/guessnumber.png", "description": "", "url": "http://davidrzuluaga.com/picasyfijas", "github": "https://github.com/davidrzuluaga/picasyfijas", "technologies": "JQuery, Javascript"},
+        {"name": "Flow Overstack", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Flow_Overstack.png", "description": "", "url": "https://floating-falls-81636.herokuapp.com/", "github": "https://github.com/davidrzuluaga/copy_flowoverstack", "technologies": "Ruby on Rails, Bootstrap"},
+        {"name": "Blog", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/blog.png", "description": "", "url": "https://lit-reef-96585.herokuapp.com/", "github": "https://github.com/davidrzuluaga/blog", "technologies": "Ruby on Rails, Bootstrap"},
+        {"name": "La Magia del Saber", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/magiascreenshot.png", "description": "", "url": "http://lamagiadelsaber.edu.co/", "github": "https://github.com/davidrzuluaga/lamagiadelsaber.edu.co", "technologies": "Ruby on Rails, Bootstrap, API"},
+        {"name": "Expensify", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/Expensify.png", "description": "", "url": "https://expensify-drz.herokuapp.com/", "github": "https://github.com/davidrzuluaga/expensify/", "technologies": "Ruby on Rails, Bootstrap, JQuery, Javascript"},
+        {"name": "Posts in Order", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/postspopulares.png", "description": "", "url": "https://davidrzuluaga.com/Post-mas-Votados-React", "github": "https://github.com/davidrzuluaga/Post-mas-Votados-React", "technologies": "React, Redux, Bootstrap, Javascript"},
+        {"name": "ag cocinas app", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/agapp.PNG", "description": "", "url": "https://agcocinas.herokuapp.com/", "github": "https://github.com/davidrzuluaga", "technologies": "Ruby on Rails, Bootstrap, Javascript"},
+        {"name": "schools elections", "img": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/portfolioimg/electionsccv.PNG", "description": "", "url": "https://elecciones-ccv.herokuapp.com/", "github": "https://github.com/davidrzuluaga", "technologies": "Ruby on Rails, Bootstrap, Javascript"}
+    ],
+    "description": [
+        "I'm full stack web developer with an undergraduate degree in International Business Management. ",
+        "I started to learn to code back when I was child. Ever since then I've been fascinated by the possibilities of code which is why I decided to focus my career on programming.",
+        "I have previous work experience in data mining. This experience helped me improve my knowledge on data bases and information management. ",
+        "My academic background and work experience have allowed me to cultivate skills that enable me to constantly find ways to improve on existing products and communicate ideas.",
+        "I'm passionate seeing something that I made to be used and loved by others, and more importantly, that facilitates and improves their lives."
+    ],
+    "webDevSkills": [
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/JavaScript-logo.png", "alt":"JavaScript", "height":"60", "width":"60"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/CSS3_and_HTML5_logos_and_wordmarks.svg.png", "alt":"CSS3", "height":"80", "width":"140"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/React.svg", "alt":"React", "height":"60", "width":"60"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/nodejs.jpg", "alt":"Node", "height":"60", "width":"60"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Ruby_On_Rails_Logo.png", "alt":"Ruby on Rails", "height":"60", "width":"140"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/bootstrap-stack.png", "alt":"bootstrap-stack", "height":"60", "width":"60"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Git-Logo.png", "alt":"Git-Logo", "height":"60", "width":"140"}
+    ],
+    "langSkills": [
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/ColFlag.png", "alt":"ColFlag", "height":"60", "width":"60", "level": "C2"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/USFlag.png", "alt":"USFlag", "height":"60", "width":"60", "level": "B2"}
+    ],
+    "proSkills": ["Management", "Leadership", "Service", "Project Management", "Sales", "Mentoring"],
+    "experience": [
+        {"area": "work", "title": "JS Full Stack", "subtitle": "Head Developer", "institution": "hackU", "description": "", "link": "http://hacku.co", "dates": "Jan. 2019 to Aug. 2019", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/36643290_1776053359142983_8512123429707579392_n.png"},
+        {"area": "education", "title": "Full Stack Web Developer", "subtitle": "Programming Bootcamp", "institution": "Make It Real Camp", "description": "", "link": "https://www.makeitreal.camp/u/davidrzuluaga", "dates": "June 2018 to Nov. 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/spaces%252F-LAPclUsEGF8MxYGQwcr%252Favatar.png"},
+        {"area": "education", "title": "International Business Negotiator", "subtitle": "Logistics", "institution": "Universidad de Medellin", "description": "", "link": "http://www.udem.edu.co/index.php/2012-10-12-13-47-21/negocios-internacionales/informacion-general", "dates": "Aug. 2013 to July 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/240px-Escudo_Universidad_de_Medellin.svg.png"},
+        {"area": "work", "title": "Apprentice to the Vice president", "subtitle": "Job functions: Data mining, reports handling, practicing supervisor, statraining, etc", "institution": "Teleperformance", "description": "", "link": "https://www.teleperformance.com/en-us", "dates": "Sept. 2017 to Apr. 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/logo_tp.png"}
+    ],
+    "CV": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/CV+David+R+Zuluaga.pdf",
+    "email": "david@DavidRZuluaga.com",
+    "social": [
+        {"socialName": "linkedin", "link": "https://linkedin.com/in/davidrzuluaga/", "icon": "fa fa-linkedin", "user": "davidrzuluaga" },
+        {"socialName": "github", "link": "https://www.github.com/davidrzuluaga", "icon": "fa fa-github", "user": "davidrzuluaga" },
+        {"socialName": "facebook", "link": "https://www.facebook.com/davidricardozuluaga", "icon": "fa fa-facebook", "user": "davidricardozuluaga" },
+        {"socialName": "twitter", "link": "https://www.twitter.com/davidrzuluaga", "icon": "fa fa-twitter", "user": "davidrzuluaga" }
+    ]
+    }]
