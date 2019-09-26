@@ -25,6 +25,7 @@
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/CSS3_and_HTML5_logos_and_wordmarks.svg.png", "alt":"CSS3", "height":"80", "width":"140"},
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/React.svg", "alt":"React", "height":"60", "width":"60"},
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/nodejs.jpg", "alt":"Node", "height":"60", "width":"60"},
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/docker_facebook_share.png", "alt":"Docker", "height":"60", "width":"60"},
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Ruby_On_Rails_Logo.png", "alt":"Ruby on Rails", "height":"60", "width":"140"},
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/bootstrap-stack.png", "alt":"bootstrap-stack", "height":"60", "width":"60"},
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/Git-Logo.png", "alt":"Git-Logo", "height":"60", "width":"140"}
