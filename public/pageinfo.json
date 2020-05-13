@@ -31,7 +31,7 @@
     ],
     "langSkills": [
         {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/ColFlag.png", "alt":"ColFlag", "height":"60", "width":"60", "level": "C2"},
-        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/USFlag.png", "alt":"USFlag", "height":"60", "width":"60", "level": "B2"}
+        {"imgurl": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/skillsimgs/USFlag.png", "alt":"USFlag", "height":"60", "width":"60", "level": "C1"}
     ],
     "proSkills": ["Management", "Leadership", "Service", "Project Management", "Sales", "Mentoring"],
     "experience": [
