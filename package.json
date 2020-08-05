@@ -1,7 +1,7 @@
 {
   "name": "davidrzuluaga-page",
   "homepage": "https://davidrzuluaga.com/",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -b master -d build",
-    "predeploy": "yarn run build"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
