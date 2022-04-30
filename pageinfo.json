@@ -34,7 +34,7 @@
     ],
     "proSkills": ["Management", "Leadership", "Service", "Project Management", "Sales", "Mentoring"],
     "experience": [
-        {"area": "work", "title": "Web UI Developer", "subtitle": "SSR Adv", "institution": "Globant", "description": "", "link": "https://globant.com", "dates": "Since Aug. 2020", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/Globant_Short-DarkBG-Color.png"},
+        {"area": "work", "title": "Web UI Developer", "subtitle": "Sr", "institution": "Globant", "description": "", "link": "https://globant.com", "dates": "Since Aug. 2020", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/Globant_Short-DarkBG-Color.png"},
         {"area": "work", "title": "JS Full Stack", "subtitle": "Analyst Developer", "institution": "Julius", "description": "Bimbau Project", "link": "https://bimbau.co", "dates": "Aug. 2019 to Aug. 2020", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/julius-2.svg"},
         {"area": "work", "title": "JS Full Stack", "subtitle": "Head Developer", "institution": "hackU", "description": "", "link": "https://hacku.co", "dates": "Jan. 2019 to Aug. 2019", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/36643290_1776053359142983_8512123429707579392_n.png"},
         {"area": "education", "title": "Full Stack Web Developer", "subtitle": "Programming Bootcamp", "institution": "Make It Real Camp", "description": "", "link": "https://www.makeitreal.camp/u/davidrzuluaga", "dates": "June 2018 to Nov. 2018", "logo": "https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/experience/spaces%252F-LAPclUsEGF8MxYGQwcr%252Favatar.png"},
