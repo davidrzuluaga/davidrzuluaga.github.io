@@ -20,7 +20,14 @@ const App = () => {
 
   const getInfo = () => {
     axios
-      .get('/pageinfo.json')
+      .get(
+        'https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/pageinfo.json',
+        {
+          headers: {
+            'Cache-Control': 'no-cache'
+          }
+        }
+      )
       .then(response => {
         setPageInfo(response.data[0]);
       })
