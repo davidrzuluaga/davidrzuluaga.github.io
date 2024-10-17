@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 const Description = props => {
   return (
@@ -11,9 +10,4 @@ const Description = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    pageInfo: state.pageInfo
-  };
-};
-export default connect(mapStateToProps)(Description);
+export default Description

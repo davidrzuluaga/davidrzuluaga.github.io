@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 const Contact = props => {
   return (
@@ -32,9 +31,5 @@ const Contact = props => {
     </div>
   );
 };
-const mapStateToProps = state => {
-  return {
-    pageInfo: state.pageInfo
-  };
-};
-export default connect(mapStateToProps)(Contact);
+
+export default Contact;

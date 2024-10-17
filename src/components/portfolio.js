@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'react-bootstrap';
 
 const Portfolio = props => {
@@ -51,9 +50,5 @@ const Portfolio = props => {
     </div>
   );
 };
-const mapStateToProps = state => {
-  return {
-    pageInfo: state.pageInfo
-  };
-};
-export default connect(mapStateToProps)(Portfolio);
+
+export default Portfolio

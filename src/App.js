@@ -1,37 +1,39 @@
-import React, { Component } from 'react';
-//import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import NavbarComp from './components/navbar';
 import Description from './components/description';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Experience from './components/experience';
-import './App.scss';
 import axios from 'axios';
-import store from './store';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      pageInfo: []
-    };
+const App = () => {
+  const [pageInfo, setPageInfo] = useState({
+    experience: [''],
+    portfolio: [''],
+    social: [''],
+    description: [''],
+    webDevSkills: [''],
+    langSkills: [''],
+    proSkills: ['']
+  });
+
+  const getInfo = () => {
     axios
       .get('/pageinfo.json')
       .then(response => {
-        this.setState({
-          pageInfo: response.data[0]
-        });
-        store.dispatch({
-          type: 'setPageInfo',
-          pageInfo: response.data[0]
-        });
+        setPageInfo(response.data[0]);
       })
       .catch(error => {
         console.log(error);
       });
-  }
-  anchor = name => (
+  };
+
+  useEffect(() => {
+    getInfo();
+  }, []);
+
+  const anchor = name => (
     <a
       className='link-button'
       name={name}
@@ -42,30 +44,28 @@ class App extends Component {
       .
     </a>
   );
-  render() {
-    return (
-      <div>
-        <NavbarComp />
-        {this.anchor('home')}
-        <header>
-          <div className='name'>
-            <h1>{this.state.pageInfo.greet}</h1>
-            <p>{this.state.pageInfo.greetDescription}</p>
-          </div>
-        </header>
-        {this.anchor('description')}
-        <Description />
-        {this.anchor('skills')}
-        <Skills />
-        {this.anchor('portfolio')}
-        <Portfolio />
-        {this.anchor('experience')}
-        <Experience />
-        {this.anchor('contact')}
-        <Contact />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {/* <NavbarComp pageInfo={pageInfo} /> */}
+      {anchor('home')}
+      <header>
+        <div className='name'>
+          <h1>{pageInfo.greet}</h1>
+          <p>{pageInfo.greetDescription}</p>
+        </div>
+      </header>
+      {anchor('description')}
+      <Description pageInfo={pageInfo} />
+      {anchor('skills')}
+      <Skills pageInfo={pageInfo} />
+      {/* {anchor('portfolio')}
+      <Portfolio pageInfo={pageInfo} /> */}
+      {anchor('experience')}
+      <Experience pageInfo={pageInfo} />
+      {anchor('contact')}
+      <Contact pageInfo={pageInfo} />
+    </div>
+  );
+};
 
 export default App;

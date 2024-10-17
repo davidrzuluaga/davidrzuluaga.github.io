@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
 
 const Skills = props => {
@@ -48,9 +47,5 @@ const Skills = props => {
     </div>
   );
 };
-const mapStateToProps = state => {
-  return {
-    pageInfo: state.pageInfo
-  };
-};
-export default connect(mapStateToProps)(Skills);
+
+export default Skills;
