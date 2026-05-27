@@ -1,42 +1,36 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { NavBar } from '../AppStyles';
 
-const NavbarComp = props => {
+const NavbarComp = ({ pageInfo, onTabChange }) => {
+  const goHome = () => {
+    onTabChange('overview');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
-      <Container>
-        <Navbar.Brand>
-          <a href='#home'> David R Zuluaga</a>
-        </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Nav>
-            <NavItem eventKey={1} href='#description'>
-              About Me
-            </NavItem>
-            <NavItem eventKey={2} href='#skills'>
-              Skills
-            </NavItem>
-            <NavItem eventKey={3} href='#portfolio'>
-              Portfolio
-            </NavItem>
-            <NavItem eventKey={4} href='#experience'>
-              Experience
-            </NavItem>
-            <NavItem eventKey={5} href='#contact'>
-              Contact
-            </NavItem>
-          </Nav>
-          <Nav pullRight className='hidden-xs'>
-            {props.pageInfo.social.map((social, index) => (
-              <NavItem href={`${social.link}`} eventKey={index} target='_blank'>
-                <i className={social.icon} />
-              </NavItem>
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <NavBar>
+      <div className='nav-inner'>
+        <button type='button' className='brand' onClick={goHome}>
+          Portfolio
+        </button>
+
+        <div className='nav-spacer' />
+
+        <div className='nav-social'>
+          {pageInfo.social?.map(social => (
+            <a
+              key={social.socialName}
+              href={social.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={social.socialName}
+            >
+              <i className={social.icon} />
+            </a>
+          ))}
+        </div>
+      </div>
+    </NavBar>
   );
 };
 

@@ -1,13 +1,27 @@
 import React from 'react';
+import { AboutText, ReadmeCard } from '../AppStyles';
 
-const Description = props => {
+const Description = ({ pageInfo, variant = 'readme' }) => {
+  const paragraphs = pageInfo.description || [];
+
+  if (variant !== 'readme') {
+    return null;
+  }
+
   return (
-    <div className='description'>
-      {props.pageInfo.description.map((desc, index) => (
-        <p key={desc}>{desc}</p>
-      ))}
-    </div>
+    <ReadmeCard id='about'>
+      <div className='readme-header'>
+        <span>davidrzuluaga / README.md</span>
+      </div>
+      <div className='readme-body'>
+        <AboutText>
+          {paragraphs.map((desc, index) => (
+            <p key={index}>{desc}</p>
+          ))}
+        </AboutText>
+      </div>
+    </ReadmeCard>
   );
 };
 
-export default Description
+export default Description;

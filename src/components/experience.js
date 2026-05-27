@@ -1,48 +1,70 @@
 import React from 'react';
-import { Row, Col, Alert } from 'react-bootstrap';
+import {
+  BoxCard,
+  ExperienceCard,
+  ExperienceContent,
+  ExperienceLogo,
+  SectionHeader,
+  SectionTitle,
+  Timeline,
+  TimelineGroup
+} from '../AppStyles';
 
-const XPCard = (xp, index) => {
-  xp = xp.xp;
-  return (
-  <Col sm={6}>
-    <Alert key={index} className={'xpcard'}>
-      <Row>
-        <Col sm={2}>
-          <img src={xp.logo} alt={xp.institution} height='60' width='60' />
-        </Col>
-        <Col sm={10}>
-          <h2>
-            <a rel='noopener noreferrer' target='_blank' href={xp.link}>
-              {xp.title}
-            </a>
-          </h2>
-          <h4>{xp.subtitle}</h4>
-          <h4>{xp.institution}</h4>
-          <p>{xp.dates}</p>
-        </Col>
-      </Row>
-    </Alert>
-  </Col>
-)};
+const ExperienceItem = ({ xp }) => (
+  <ExperienceCard>
+    <ExperienceLogo>
+      <img src={xp.logo} alt={xp.institution} />
+    </ExperienceLogo>
+    <ExperienceContent>
+      <h4>
+        <a href={xp.link} target='_blank' rel='noopener noreferrer'>
+          {xp.institution}
+        </a>
+      </h4>
+      <p className='role'>{xp.title}</p>
+      <p className='company'>{xp.subtitle}</p>
+      <span className='dates'>{xp.dates}</span>
+      {xp.description && <p>{xp.description}</p>}
+    </ExperienceContent>
+  </ExperienceCard>
+);
 
-const Experience = props => {
+const Experience = ({ pageInfo }) => {
+  const work = pageInfo.experience?.filter(item => item.area === 'work') || [];
+  const education =
+    pageInfo.experience?.filter(item => item.area === 'education') || [];
+
   return (
-    <div className='experience'>
-      <div className='xp'>
-        <h1>Experience</h1>
-        <h2>Work</h2>
-        <Row>
-          {props.pageInfo.experience.filter(ed=>ed.area === "work").map((xp, index) => (
-            <XPCard xp={xp} index={index} />
-          ))}
-        </Row>
-        <h2>Education</h2>
-        <Row>
-          {props.pageInfo.experience.filter(ed=>ed.area === "education").map((xp, index) => (
-            <XPCard xp={xp} index={index} />
-          ))}
-        </Row>
-      </div>
+    <div id='experience'>
+      <SectionHeader>
+        <SectionTitle>Experience</SectionTitle>
+      </SectionHeader>
+
+      <BoxCard>
+        <div className='box-header'>Work</div>
+        <div className='box-body'>
+          <Timeline>
+            <TimelineGroup>
+              {work.map((xp, index) => (
+                <ExperienceItem key={`${xp.institution}-${index}`} xp={xp} />
+              ))}
+            </TimelineGroup>
+          </Timeline>
+        </div>
+      </BoxCard>
+
+      <BoxCard style={{ marginTop: '16px' }}>
+        <div className='box-header'>Education</div>
+        <div className='box-body'>
+          <Timeline>
+            <TimelineGroup>
+              {education.map((xp, index) => (
+                <ExperienceItem key={`${xp.institution}-${index}`} xp={xp} />
+              ))}
+            </TimelineGroup>
+          </Timeline>
+        </div>
+      </BoxCard>
     </div>
   );
 };

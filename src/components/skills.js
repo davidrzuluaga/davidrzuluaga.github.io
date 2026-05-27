@@ -1,49 +1,68 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import {
+  BoxCard,
+  LangItem,
+  LangList,
+  SectionHeader,
+  SectionTitle,
+  SkillPanel,
+  SkillsGrid,
+  Tag,
+  TagGrid,
+  TechGrid,
+  TechItem
+} from '../AppStyles';
 
-const Skills = props => {
+const Skills = ({ pageInfo }) => {
   return (
-    <div className='skills'>
-      <div className='skill'>
-        <h1>Web Developer Skills</h1>
-        {props.pageInfo.webDevSkills.map((skill, index) => (
-          <img
-            className='imgskill'
-            src={skill.imgurl}
-            key={skill.alt}
-            alt={skill.alt}
-            height={skill.height}
-            width={skill.width}
-          />
-        ))}
-        <h1>Languages</h1>
-        {props.pageInfo.langSkills.map((skill, index) => (
-          <div className='langSkills' key={skill.alt}>
-            <img
-              className='imgskill'
-              src={skill.imgurl}
-              alt={skill.alt}
-              height={skill.height}
-              width={skill.width}
-            />{' '}
-            <p>{skill.level}</p>
+    <div id='skills'>
+      <SectionHeader>
+        <SectionTitle>Skills</SectionTitle>
+      </SectionHeader>
+
+      <SkillsGrid>
+        <SkillPanel>
+          <div className='panel-header'>Technologies</div>
+          <div className='panel-body'>
+            <TechGrid>
+              {pageInfo.webDevSkills?.map(skill => (
+                <TechItem key={skill.alt}>
+                  <img src={skill.imgurl} alt={skill.alt} />
+                  <span>{skill.alt}</span>
+                </TechItem>
+              ))}
+            </TechGrid>
           </div>
-        ))}
-        <h1>Professional</h1>
-        <h3>
-          {props.pageInfo.proSkills.map((skill, index) => skill + ', ')} among
-          others.{' '}
-        </h3>
-      </div>
-      <Button
-        id='cvlink'
-        href={props.pageInfo.CV}
-        rel='noopener noreferrer'
-        target='_blank'
-        bsStyle='warning'
-      >
-        Download my CV!
-      </Button>
+        </SkillPanel>
+
+        <BoxCard>
+          <div className='box-header'>Languages</div>
+          <div className='box-body'>
+            <LangList>
+              {pageInfo.langSkills?.map(skill => (
+                <LangItem key={skill.alt}>
+                  <img src={skill.imgurl} alt={skill.alt} />
+                  <div>
+                    <strong>{skill.alt}</strong>
+                    <span>{skill.level}</span>
+                  </div>
+                </LangItem>
+              ))}
+            </LangList>
+          </div>
+        </BoxCard>
+
+        <BoxCard>
+          <div className='box-header'>Professional strengths</div>
+          <div className='box-body'>
+            <TagGrid>
+              {pageInfo.proSkills?.map(skill => (
+                <Tag key={skill}>{skill}</Tag>
+              ))}
+            </TagGrid>
+          </div>
+        </BoxCard>
+      </SkillsGrid>
     </div>
   );
 };
