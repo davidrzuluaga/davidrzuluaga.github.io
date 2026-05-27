@@ -808,7 +808,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Footer = styled.footer`
-  padding: 24px 0 40px;
+  padding: 24px 16px 20px;
   text-align: center;
   color: ${theme.colors.textMuted};
   font-size: 12px;

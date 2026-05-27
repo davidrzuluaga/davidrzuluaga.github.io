@@ -4,15 +4,12 @@ import {
   BoxCard,
   ContactCard,
   ContactSection,
-  Footer,
   PrimaryButton,
   SocialGrid,
   SocialLink
 } from '../AppStyles';
 
 const Contact = ({ pageInfo, variant = 'main' }) => {
-  const year = new Date().getFullYear();
-
   if (variant === 'sidebar') {
     return (
       <BoxCard>
@@ -55,8 +52,6 @@ const Contact = ({ pageInfo, variant = 'main' }) => {
           </PrimaryButton>
         </ContactCard>
       </ContactSection>
-
-      <Footer>© {year} David R. Zuluaga</Footer>
     </>
   );
 };

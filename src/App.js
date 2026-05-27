@@ -10,6 +10,7 @@ import Experience from './components/experience';
 import { hashToTab, profileTabs } from './data/profileTabs';
 import {
   Container,
+  Footer,
   LoadingScreen,
   MainColumn,
   PageGrid,
@@ -162,6 +163,8 @@ const App = () => {
           </MainColumn>
         </PageGrid>
       </Container>
+
+      <Footer>© 2026 David R. Zuluaga</Footer>
     </div>
   );
 };
