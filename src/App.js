@@ -20,6 +20,21 @@ import {
 const PAGE_INFO_URL =
   'https://s3.us-east-2.amazonaws.com/davidrzuluaga.com/assets/pageinfo.json';
 
+const getInitialColorMode = () => {
+  if (typeof window === 'undefined') return 'dark';
+
+  const stored = window.localStorage.getItem('color-mode');
+  if (stored === 'light' || stored === 'dark') {
+    return stored;
+  }
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    return 'light';
+  }
+
+  return 'dark';
+};
+
 const App = () => {
   const [pageInfo, setPageInfo] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -27,6 +42,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState(() =>
     hashToTab(window.location.hash)
   );
+  const [colorMode, setColorMode] = useState(getInitialColorMode);
 
   useEffect(() => {
     axios
@@ -48,6 +64,12 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    const root = document.documentElement;
+    root.setAttribute('data-theme', colorMode);
+    window.localStorage.setItem('color-mode', colorMode);
+  }, [colorMode]);
+
+  useEffect(() => {
     const onHashChange = () => {
       setActiveTab(hashToTab(window.location.hash));
     };
@@ -62,6 +84,10 @@ const App = () => {
     if (window.location.hash !== hash) {
       window.history.replaceState(null, '', hash);
     }
+  };
+
+  const handleToggleColorMode = () => {
+    setColorMode(mode => (mode === 'light' ? 'dark' : 'light'));
   };
 
   const renderTabContent = () => {
@@ -96,7 +122,12 @@ const App = () => {
 
   return (
     <div>
-      <NavbarComp pageInfo={pageInfo} onTabChange={handleTabChange} />
+      <NavbarComp
+        pageInfo={pageInfo}
+        onTabChange={handleTabChange}
+        colorMode={colorMode}
+        onToggleColorMode={handleToggleColorMode}
+      />
 
       <Container>
         <PageGrid>

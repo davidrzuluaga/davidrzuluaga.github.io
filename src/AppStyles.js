@@ -5,6 +5,8 @@ export const AppStyles = styled.div`
   min-height: 100vh;
   overflow-x: hidden;
   background: ${theme.colors.bg};
+  color: ${theme.colors.text};
+  transition: background 0.2s ease, color 0.2s ease;
 `;
 
 export const Container = styled.div`
@@ -305,6 +307,10 @@ export const ProfileTabs = styled.nav`
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: sticky;
+  top: 64px; /* stay visible below sticky navbar */
+  z-index: 900;
+  background: ${theme.colors.bg};
   border-bottom: 1px solid ${theme.colors.border};
   margin-bottom: 24px;
 
@@ -379,6 +385,8 @@ export const PageGrid = styled.div`
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: stretch;
+    gap: 16px;
+    padding: 16px 0;
   }
 `;
 
@@ -882,6 +890,25 @@ export const NavBar = styled.header`
       &:hover {
         color: rgba(240, 246, 252, 0.7);
       }
+    }
+  }
+
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: ${theme.radius.sm};
+    border: 1px solid rgba(240, 246, 252, 0.2);
+    background: transparent;
+    color: ${theme.colors.headerText};
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      color: rgba(240, 246, 252, 0.9);
+      background: rgba(240, 246, 252, 0.1);
     }
   }
 
