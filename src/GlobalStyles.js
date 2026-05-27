@@ -59,7 +59,15 @@ export const GlobalStyles = css`
     margin: 0;
   }
 
-  button {
-    font-family: inherit;
+  i.fab,
+  i.fa-brands {
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+  }
+
+  i.fa-solid,
+  i.fas {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
   }
 `;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { normalizeIcon } from '../utils/iconUtils';
 import {
   ProfileActions,
   ProfileAvatar,
@@ -62,7 +63,7 @@ const ProfileSidebar = ({ pageInfo }) => (
       </ProfileDetailsItem>
       {pageInfo.social?.map(social => (
         <ProfileDetailsItem key={social.socialName}>
-          <i className={social.icon} />
+          <i className={normalizeIcon(social.icon)} />
           <a href={social.link} target='_blank' rel='noopener noreferrer'>
             {social.user}
           </a>

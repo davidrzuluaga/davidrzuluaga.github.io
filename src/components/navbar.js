@@ -1,4 +1,5 @@
 import React from 'react';
+import { normalizeIcon } from '../utils/iconUtils';
 import { NavBar } from '../AppStyles';
 
 const NavbarComp = ({ pageInfo, onTabChange }) => {
@@ -25,7 +26,7 @@ const NavbarComp = ({ pageInfo, onTabChange }) => {
               rel='noopener noreferrer'
               aria-label={social.socialName}
             >
-              <i className={social.icon} />
+              <i className={normalizeIcon(social.icon)} />
             </a>
           ))}
         </div>

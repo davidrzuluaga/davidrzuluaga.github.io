@@ -220,6 +220,14 @@ export const ProfileDetailsItem = styled.li`
     text-align: center;
     flex-shrink: 0;
     color: ${theme.colors.textMuted};
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+  }
+
+  i.fab,
+  i.fa-brands {
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
   }
 
   a {
@@ -294,8 +302,15 @@ export const ProfileTabs = styled.nav`
   display: flex;
   gap: 8px;
   overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-bottom: 1px solid ${theme.colors.border};
   margin-bottom: 24px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   button {
     display: inline-flex;
@@ -311,10 +326,19 @@ export const ProfileTabs = styled.nav`
     background: transparent;
     cursor: pointer;
     font-family: inherit;
+    flex-shrink: 0;
 
     i {
       font-size: 16px;
       color: ${theme.colors.textMuted};
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+    }
+
+    i.fab,
+    i.fa-brands {
+      font-family: 'Font Awesome 6 Brands';
+      font-weight: 400;
     }
 
     &:hover {

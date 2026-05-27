@@ -13,6 +13,17 @@ import {
   TechItem
 } from '../AppStyles';
 
+const languageLabel = alt => {
+  switch (alt) {
+    case 'ColFlag':
+      return 'Spanish';
+    case 'USFlag':
+      return 'English';
+    default:
+      return alt;
+  }
+};
+
 const Skills = ({ pageInfo }) => {
   return (
     <div id='skills'>
@@ -41,9 +52,9 @@ const Skills = ({ pageInfo }) => {
             <LangList>
               {pageInfo.langSkills?.map(skill => (
                 <LangItem key={skill.alt}>
-                  <img src={skill.imgurl} alt={skill.alt} />
+                  <img src={skill.imgurl} alt={languageLabel(skill.alt)} />
                   <div>
-                    <strong>{skill.alt}</strong>
+                    <strong>{languageLabel(skill.alt)}</strong>
                     <span>{skill.level}</span>
                   </div>
                 </LangItem>

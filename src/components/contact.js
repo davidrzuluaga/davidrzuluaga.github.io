@@ -1,4 +1,5 @@
 import React from 'react';
+import { normalizeIcon } from '../utils/iconUtils';
 import {
   BoxCard,
   ContactCard,
@@ -25,7 +26,7 @@ const Contact = ({ pageInfo, variant = 'main' }) => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <i className={social.icon} />
+                <i className={normalizeIcon(social.icon)} />
                 {social.user}
               </SocialLink>
             ))}
