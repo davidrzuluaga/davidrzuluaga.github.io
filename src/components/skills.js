@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 import {
   BoxCard,
   LangItem,
@@ -13,27 +14,32 @@ import {
   TechItem
 } from '../AppStyles';
 
-const languageLabel = alt => {
-  switch (alt) {
-    case 'ColFlag':
-      return 'Spanish';
-    case 'USFlag':
-      return 'English';
-    default:
-      return alt;
-  }
-};
-
 const Skills = ({ pageInfo }) => {
+  const { t } = useTranslation();
+
+  const languageLabel = skill => {
+    const key = skill.id || skill.alt;
+    switch (key) {
+      case 'es':
+      case 'ColFlag':
+        return t('skills.spanish');
+      case 'en':
+      case 'USFlag':
+        return t('skills.english');
+      default:
+        return skill.alt;
+    }
+  };
+
   return (
     <div id='skills'>
       <SectionHeader>
-        <SectionTitle>Skills</SectionTitle>
+        <SectionTitle>{t('skills.title')}</SectionTitle>
       </SectionHeader>
 
       <SkillsGrid>
         <SkillPanel>
-          <div className='panel-header'>Technologies</div>
+          <div className='panel-header'>{t('skills.technologies')}</div>
           <div className='panel-body'>
             <TechGrid>
               {pageInfo.webDevSkills?.map(skill => (
@@ -47,14 +53,14 @@ const Skills = ({ pageInfo }) => {
         </SkillPanel>
 
         <BoxCard>
-          <div className='box-header'>Languages</div>
+          <div className='box-header'>{t('skills.languages')}</div>
           <div className='box-body'>
             <LangList>
               {pageInfo.langSkills?.map(skill => (
-                <LangItem key={skill.alt}>
-                  <img src={skill.imgurl} alt={languageLabel(skill.alt)} />
+                <LangItem key={skill.id || skill.alt}>
+                  <img src={skill.imgurl} alt={languageLabel(skill)} />
                   <div>
-                    <strong>{languageLabel(skill.alt)}</strong>
+                    <strong>{languageLabel(skill)}</strong>
                     <span>{skill.level}</span>
                   </div>
                 </LangItem>
@@ -64,7 +70,7 @@ const Skills = ({ pageInfo }) => {
         </BoxCard>
 
         <BoxCard>
-          <div className='box-header'>Professional strengths</div>
+          <div className='box-header'>{t('skills.professionalStrengths')}</div>
           <div className='box-body'>
             <TagGrid>
               {pageInfo.proSkills?.map(skill => (

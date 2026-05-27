@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 import { AboutText, ReadmeCard } from '../AppStyles';
 
 const Description = ({ pageInfo, variant = 'readme' }) => {
+  const { t } = useTranslation();
   const paragraphs = pageInfo.description || [];
 
   if (variant !== 'readme') {
@@ -11,7 +13,7 @@ const Description = ({ pageInfo, variant = 'readme' }) => {
   return (
     <ReadmeCard id='about'>
       <div className='readme-header'>
-        <span>davidrzuluaga / README.md</span>
+        <span>{t('description.readmePath')}</span>
       </div>
       <div className='readme-body'>
         <AboutText>

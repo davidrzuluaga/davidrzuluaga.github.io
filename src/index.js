@@ -4,6 +4,7 @@ import App from './App';
 import { Global, css } from '@emotion/react';
 import { AppStyles } from './AppStyles';
 import { GlobalStyles } from './GlobalStyles';
+import { LanguageProvider } from './i18n/LanguageContext';
 
 ReactDOM.render(
   <>
@@ -12,9 +13,11 @@ ReactDOM.render(
         ${GlobalStyles}
       `}
     />
-    <AppStyles>
-      <App />
-    </AppStyles>
+    <LanguageProvider>
+      <AppStyles>
+        <App />
+      </AppStyles>
+    </LanguageProvider>
   </>,
   document.getElementById('root')
 );

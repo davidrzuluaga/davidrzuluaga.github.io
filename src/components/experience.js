@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 import {
   BoxCard,
   ExperienceCard,
@@ -30,6 +31,7 @@ const ExperienceItem = ({ xp }) => (
 );
 
 const Experience = ({ pageInfo }) => {
+  const { t } = useTranslation();
   const work = pageInfo.experience?.filter(item => item.area === 'work') || [];
   const education =
     pageInfo.experience?.filter(item => item.area === 'education') || [];
@@ -37,11 +39,11 @@ const Experience = ({ pageInfo }) => {
   return (
     <div id='experience'>
       <SectionHeader>
-        <SectionTitle>Experience</SectionTitle>
+        <SectionTitle>{t('experience.title')}</SectionTitle>
       </SectionHeader>
 
       <BoxCard>
-        <div className='box-header'>Work</div>
+        <div className='box-header'>{t('experience.work')}</div>
         <div className='box-body'>
           <Timeline>
             <TimelineGroup>
@@ -54,7 +56,7 @@ const Experience = ({ pageInfo }) => {
       </BoxCard>
 
       <BoxCard style={{ marginTop: '16px' }}>
-        <div className='box-header'>Education</div>
+        <div className='box-header'>{t('experience.education')}</div>
         <div className='box-body'>
           <Timeline>
             <TimelineGroup>

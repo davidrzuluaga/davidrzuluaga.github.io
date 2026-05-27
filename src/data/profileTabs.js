@@ -1,9 +1,9 @@
 export const profileTabs = [
-  { id: 'overview', label: 'Overview', icon: 'fa-solid fa-book' },
-  { id: 'skills', label: 'Skills', icon: 'fa-solid fa-code' },
-  { id: 'portfolio', label: 'Projects', icon: 'fa-solid fa-diagram-project' },
-  { id: 'experience', label: 'Experience', icon: 'fa-solid fa-briefcase' },
-  { id: 'contact', label: 'Contact', icon: 'fa-solid fa-envelope' }
+  { id: 'overview', icon: 'fa-solid fa-book' },
+  { id: 'skills', icon: 'fa-solid fa-code' },
+  { id: 'portfolio', icon: 'fa-solid fa-diagram-project' },
+  { id: 'experience', icon: 'fa-solid fa-briefcase' },
+  { id: 'contact', icon: 'fa-solid fa-envelope' }
 ];
 
 export const hashToTab = hash => {

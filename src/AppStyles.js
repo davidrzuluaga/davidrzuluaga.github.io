@@ -912,6 +912,28 @@ export const NavBar = styled.header`
     }
   }
 
+  .language-toggle {
+    min-width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: ${theme.radius.sm};
+    border: 1px solid rgba(240, 246, 252, 0.2);
+    background: transparent;
+    color: ${theme.colors.headerText};
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: inherit;
+
+    &:hover {
+      color: rgba(240, 246, 252, 0.9);
+      background: rgba(240, 246, 252, 0.1);
+    }
+  }
+
   .menu-toggle {
     display: none;
     background: transparent;

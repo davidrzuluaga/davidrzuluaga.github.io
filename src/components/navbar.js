@@ -1,8 +1,16 @@
 import React from 'react';
 import { normalizeIcon } from '../utils/iconUtils';
+import { useTranslation } from '../i18n/LanguageContext';
 import { NavBar } from '../AppStyles';
 
-const NavbarComp = ({ pageInfo, onTabChange, colorMode, onToggleColorMode }) => {
+const NavbarComp = ({
+  pageInfo,
+  onTabChange,
+  colorMode,
+  onToggleColorMode
+}) => {
+  const { locale, toggleLocale, t } = useTranslation();
+
   const goHome = () => {
     onTabChange('overview');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -12,7 +20,7 @@ const NavbarComp = ({ pageInfo, onTabChange, colorMode, onToggleColorMode }) => 
     <NavBar>
       <div className='nav-inner'>
         <button type='button' className='brand' onClick={goHome}>
-          Portfolio
+          {t('nav.portfolio')}
         </button>
 
         <div className='nav-spacer' />
@@ -20,10 +28,24 @@ const NavbarComp = ({ pageInfo, onTabChange, colorMode, onToggleColorMode }) => 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button
             type='button'
+            className='language-toggle'
+            onClick={toggleLocale}
+            aria-label={
+              locale === 'en' ? t('nav.switchToSpanish') : t('nav.switchToEnglish')
+            }
+            title={locale === 'en' ? t('nav.switchToSpanish') : t('nav.switchToEnglish')}
+          >
+            {locale === 'en' ? 'ES' : 'EN'}
+          </button>
+
+          <button
+            type='button'
             className='theme-toggle'
             onClick={onToggleColorMode}
             aria-label={
-              colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
+              colorMode === 'light'
+                ? t('nav.switchToDark')
+                : t('nav.switchToLight')
             }
           >
             <i

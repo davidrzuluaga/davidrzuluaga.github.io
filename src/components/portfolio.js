@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 import {
   PortfolioGrid,
   ProjectBody,
@@ -11,12 +12,13 @@ import {
 } from '../AppStyles';
 
 const Portfolio = ({ pageInfo }) => {
+  const { t } = useTranslation();
   const projects = pageInfo.portfolio || [];
 
   return (
     <div id='portfolio'>
       <SectionHeader>
-        <SectionTitle>Popular repositories</SectionTitle>
+        <SectionTitle>{t('portfolio.popularRepositories')}</SectionTitle>
       </SectionHeader>
 
       <PortfolioGrid>
@@ -37,13 +39,13 @@ const Portfolio = ({ pageInfo }) => {
                 )}
               </h3>
               <p>
-                {project.description ||
-                  'A production-ready application focused on usability and maintainable architecture.'}
+                {project.description || t('portfolio.defaultDescription')}
               </p>
               <RepoMeta>
                 <span>
                   <span className='dot' />
-                  {project.technologies.split(',')[0]?.trim() || 'Public'}
+                  {project.technologies.split(',')[0]?.trim() ||
+                    t('portfolio.public')}
                 </span>
               </RepoMeta>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -54,7 +56,7 @@ const Portfolio = ({ pageInfo }) => {
               <ProjectLinks>
                 {project.url && project.url !== '#' && (
                   <a href={project.url} target='_blank' rel='noopener noreferrer'>
-                    Live demo
+                    {t('portfolio.liveDemo')}
                   </a>
                 )}
                 {project.github && (
@@ -63,7 +65,7 @@ const Portfolio = ({ pageInfo }) => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    Source
+                    {t('portfolio.source')}
                   </a>
                 )}
               </ProjectLinks>

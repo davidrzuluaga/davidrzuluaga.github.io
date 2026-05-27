@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
 import NavbarComp from './components/navbar';
 import ProfileSidebar from './components/profileSidebar';
@@ -8,6 +8,8 @@ import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Experience from './components/experience';
 import { hashToTab, profileTabs } from './data/profileTabs';
+import { useTranslation } from './i18n/LanguageContext';
+import { resolvePageInfo } from './utils/pageInfo';
 import {
   Container,
   Footer,
@@ -37,7 +39,8 @@ const getInitialColorMode = () => {
 };
 
 const App = () => {
-  const [pageInfo, setPageInfo] = useState(null);
+  const { locale, t } = useTranslation();
+  const [rawPageInfo, setRawPageInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState(() =>
@@ -53,16 +56,21 @@ const App = () => {
         }
       })
       .then(response => {
-        setPageInfo(response.data[0]);
+        setRawPageInfo(response.data[0]);
       })
       .catch(err => {
         console.log(err);
-        setError('Unable to load profile data. Please try again later.');
+        setError('loadError');
       })
       .finally(() => {
         setLoading(false);
       });
   }, []);
+
+  const pageInfo = useMemo(
+    () => resolvePageInfo(rawPageInfo, locale),
+    [rawPageInfo, locale]
+  );
 
   useEffect(() => {
     const root = document.documentElement;
@@ -114,11 +122,11 @@ const App = () => {
   };
 
   if (loading) {
-    return <LoadingScreen>Loading profile…</LoadingScreen>;
+    return <LoadingScreen>{t('common.loading')}</LoadingScreen>;
   }
 
   if (error || !pageInfo) {
-    return <LoadingScreen>{error || 'Unable to load profile data.'}</LoadingScreen>;
+    return <LoadingScreen>{t('common.loadError')}</LoadingScreen>;
   }
 
   return (
@@ -135,7 +143,7 @@ const App = () => {
           <ProfileSidebar pageInfo={pageInfo} />
 
           <MainColumn>
-            <ProfileTabs role='tablist' aria-label='Profile sections'>
+            <ProfileTabs role='tablist' aria-label={t('tabs.profileSections')}>
               {profileTabs.map(tab => (
                 <button
                   key={tab.id}
@@ -148,7 +156,7 @@ const App = () => {
                   onClick={() => handleTabChange(tab.id)}
                 >
                   <i className={tab.icon} />
-                  {tab.label}
+                  {t(`tabs.${tab.id}`)}
                 </button>
               ))}
             </ProfileTabs>
@@ -164,7 +172,7 @@ const App = () => {
         </PageGrid>
       </Container>
 
-      <Footer>© 2026 David R. Zuluaga</Footer>
+      <Footer>{t('common.footer')}</Footer>
     </div>
   );
 };

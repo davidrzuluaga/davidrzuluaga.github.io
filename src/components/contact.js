@@ -1,5 +1,6 @@
 import React from 'react';
 import { normalizeIcon } from '../utils/iconUtils';
+import { useTranslation } from '../i18n/LanguageContext';
 import {
   BoxCard,
   ContactCard,
@@ -10,10 +11,12 @@ import {
 } from '../AppStyles';
 
 const Contact = ({ pageInfo, variant = 'main' }) => {
+  const { t } = useTranslation();
+
   if (variant === 'sidebar') {
     return (
       <BoxCard>
-        <div className='box-header'>Links</div>
+        <div className='box-header'>{t('contact.links')}</div>
         <div className='box-body'>
           <SocialGrid>
             {pageInfo.social?.map(social => (
@@ -29,7 +32,7 @@ const Contact = ({ pageInfo, variant = 'main' }) => {
             ))}
             <SocialLink href={`mailto:${pageInfo.email}`}>
               <i className='fa-solid fa-envelope' />
-              Email
+              {t('contact.email')}
             </SocialLink>
           </SocialGrid>
         </div>
@@ -38,21 +41,16 @@ const Contact = ({ pageInfo, variant = 'main' }) => {
   }
 
   return (
-    <>
-      <ContactSection id='contact'>
-        <ContactCard>
-          <h2>Get in touch</h2>
-          <p>
-            Open to meaningful collaborations, engineering conversations, and
-            opportunities to build products that make a difference.
-          </p>
-          <PrimaryButton href={`mailto:${pageInfo.email}`}>
-            <i className='fa-solid fa-envelope' />
-            {pageInfo.email}
-          </PrimaryButton>
-        </ContactCard>
-      </ContactSection>
-    </>
+    <ContactSection id='contact'>
+      <ContactCard>
+        <h2>{t('contact.getInTouch')}</h2>
+        <p>{t('contact.description')}</p>
+        <PrimaryButton href={`mailto:${pageInfo.email}`}>
+          <i className='fa-solid fa-envelope' />
+          {pageInfo.email}
+        </PrimaryButton>
+      </ContactCard>
+    </ContactSection>
   );
 };
 
